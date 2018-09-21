@@ -102,3 +102,51 @@ footer {
     text-decoration: none;
     color: #82b74b;
 }
+
+/*--------------------------------------------------------------------carousel*/
+
+/*---------------------------------------------------------------------Contact*/
+
+.contact-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: #3e4444;
+    color: #ffffff;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background: #82b74b;
+    color: #ffffff;
+}
+
+
+/*---------------------------------------------------------------media queries*/
+
+@media(max-width: 992px) {
+    .navbar-default .navbar-nav li a{
+    padding:0;
+    color: #ffffff;
+    font-family: "Cabin Sketch", sans-serif;
+    font-size:18px;
+    font-weight: 200;
+}
+
+.social-links li a i {
+    display: inline-block;
