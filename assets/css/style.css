@@ -6,12 +6,12 @@
     background-color: #5e6868;
 }
 
-.bg-color-footer{
+.bg-color-footer {
     background-color: #3e4444;
 }
 
 
-/*-------------------------------------------------------------special padding*/
+/*---------------------------------------------------------------------special*/
 
 body {
     background-color: #e6e2d3;
@@ -24,31 +24,38 @@ h4 {
     margin: 0;
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
 /*--------------------------------------------------------------------nav bar*/
 
 .navbar {
     min-height: 90px;
-    width:100%;
+    width: 100%;
 }
 
-.navbar-default .navbar-nav li a{
+#navbar {
+    padding: 0;
+}
+
+.navbar-default .navbar-nav li a {
     padding-top: 30px;
     color: #ffffff;
     font-family: "Cabin Sketch", sans-serif;
-    font-size:20px;
+    font-size: 20px;
     font-weight: 300;
 }
 
-.navbar-default .navbar-nav li a:hover{
+.navbar-default .navbar-nav li a:hover {
     color: #82b74b;
 }
 
 .navbar-brand {
-    padding-top:20px;
+    padding-top: 20px;
 }
 
 /*----------------------------------------------------------------social links*/
-
 
 .social-links li a i {
     width: 28px;
@@ -105,6 +112,21 @@ footer {
 
 /*--------------------------------------------------------------------carousel*/
 
+.carousel {
+    width: 50%;
+    height: 300;
+    margin: auto;
+}
+
+.carousel-caption a {
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+    color: #405d27;
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: 2px 2px #000000;
+}
+
 /*---------------------------------------------------------------------Contact*/
 
 .contact-heading {
@@ -136,17 +158,71 @@ button[type="submit"]:hover {
     color: #ffffff;
 }
 
+/*--------------------------------------------------------------------the band*/
+
+.band-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+/*-----------------------------------------------------------------------watch*/
+
+.watchiframe {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+    
+}
+
+.youtube-link {
+    display:block;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Cabin Sketch", sans-serif;
+    color: #5e6868;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.youtube-link:hover {
+    text-decoration: none;
+    color: #82b74b;
+}
 
 /*---------------------------------------------------------------media queries*/
 
 @media(max-width: 992px) {
-    .navbar-default .navbar-nav li a{
-    padding:0;
-    color: #ffffff;
-    font-family: "Cabin Sketch", sans-serif;
-    font-size:18px;
-    font-weight: 200;
+    .navbar-default .navbar-nav li a {
+        padding-top: 30px;
+        color: #ffffff;
+        font-family: "Cabin Sketch", sans-serif;
+        font-size: 18px;
+        font-weight: 200;
+    }
+
+    .navbar {
+        min-height: 70px;
+    }
+
+    .navbar-brand {
+        padding-top: 10px;
+    }
+
+    .carousel {
+        width: 100%;
+        height: 300;
+        margin: auto;
+    }
 }
 
-.social-links li a i {
-    display: inline-block;
+@media(max-width: 767px) {
+    .navbar-default .navbar-nav li a {
+        padding-top: 2px;
+        color: #ffffff;
+        font-family: "Cabin Sketch", sans-serif;
+        font-size: 18px;
+        font-weight: 200;
+    }
+}
