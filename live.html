@@ -57,9 +57,42 @@
         </div>
     </header>
 
-    <section>
+    <section class="container-fluid">
+        <div>
+            <h1 class="livecountdown">Hear us play in...</h1>
+            <div id="live-countdown"></div>
+        </div>
 
-        <iframe id="lemonrock" class="lemonrock" src="https://www.lemonrock.com/faithhealers?page=gigs" height="300" width="80%"></iframe>
+        <table class="table table-hover table-responsive">
+            <thead>
+                <tr>
+                    <th><i class="far fa-calendar-alt"></i></th>
+                    <th><i class="fas fa-map-marked-alt"></i></th>
+                    <th><i class="fas fa-ticket-alt"></i></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="danger">
+                    <td class="live-date">26 Oct 18</td>
+                    <td class="live-location">The Monument, Newbury</td>
+                    <td class="live-price">Sold Out!</td>
+                </tr>
+
+                <a href="https://www.lemonrock.com/gig.php?id=564467">
+                    <tr>
+                        <td class="live-date">17 Nov 18</td>
+                        <td class="live-location">The Nightingale, Bicester</td>
+                        <td class="live-price">Free!</td>
+                    </tr>
+                </a>
+
+                <tr>
+                    <td class="live-date">16 Mar 19</td>
+                    <td class="live-location">The Belle Vue, High Wycombe</td>
+                    <td class="live-price">Free!</td>
+                </tr>
+            </tbody>
+        </table>
 
     </section>
 
@@ -83,6 +116,37 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Nov 17, 2018 00:01:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+            // Get todays date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("live-countdown").innerHTML = days + "d " + hours + "h " +
+                minutes + "m " + seconds + "s ";
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("live-countdown").innerHTML = "HEAR US PLAY TONIGHT";
+            }
+        }, 1000);
+    </script>
+
 
 </body>
 

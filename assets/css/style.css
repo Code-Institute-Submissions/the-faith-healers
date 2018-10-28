@@ -34,6 +34,7 @@ h4 {
     min-height: 90px;
     width: 100%;
     border-radius: 0px;
+    border-color: #5e6868;
 }
 
 #navbar {
@@ -54,9 +55,14 @@ h4 {
 
 .navbar-brand {
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /*----------------------------------------------------------------social links*/
+
+.social-links {
+    max-width: 351px;
+}
 
 .social-links li a i {
     width: 28px;
@@ -79,7 +85,9 @@ h4 {
 }
 
 /*.social-links-nav {*/
+
 /*    float: right;*/
+
 /*}*/
 
 /*----------------------------------------------------------------------footer*/
@@ -114,12 +122,37 @@ footer {
     color: #82b74b;
 }
 
+/*---------------------------------------------------------------------section*/
+
+section {
+    min-height: calc(100vh - 180px);
+}
+
+.about-heading {
+    padding: 20px;
+    text-align: center;
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: 700;
+
+}
+
 /*--------------------------------------------------------------------carousel*/
 
 .carousel {
     width: 50%;
     height: 300;
     margin: auto;
+    box-shadow: 10px 10px 5px grey;
+    border-radius: 5px;
+}
+
+.carousel-inner {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.carousel-control {
+    border-radius: 5px;
 }
 
 .carousel-caption a {
@@ -174,26 +207,30 @@ button[type="submit"]:hover {
 }
 
 .band-image {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50px;
-    margin: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .band-name {
-    padding: 20px;
+    padding-left: 15px;
     font-family: "Cabin Sketch", sans-serif;
     font-weight: 500;
     color: #82b74b;
+    text-align: left;
 }
 
 .band-bio {
-    padding-left: 20px;
+    padding-top: 10px;
+    padding-left: 15px;
     font-family: "Nunito", sans-serif;
     font-size: 18px;
     font-weight: 500;
     color: #3e4444;
-
+    text-align: left;
 }
 
 /*-----------------------------------------------------------------------watch*/
@@ -221,9 +258,47 @@ button[type="submit"]:hover {
     color: #82b74b;
 }
 
-/*---------------------------------------------------------------media queries*/
+/*------------------------------------------------------------------------live*/
 
-@media(max-width: 992px) {
+.livecountdown {
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: #5e6868;
+}
+
+#live-countdown {
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: #82b74b;
+}
+
+.table {
+    margin: auto;
+    max-width: 70%;
+}
+
+.live-date .live-location .live-price {
+    max-width: 50px;
+}
+
+th {
+    text-align: center;
+    font-size: 28px
+}
+
+td {
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/*---------------------------------------------------------------media queries
+
+@media(min-width: 768px max-width: 992px) {
     .navbar-default .navbar-nav li a {
         padding-top: 30px;
         color: #ffffff;
@@ -256,3 +331,4 @@ button[type="submit"]:hover {
         font-weight: 200;
     }
 }
+                                                                            */
