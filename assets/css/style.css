@@ -3,18 +3,18 @@
 /*----------------------------------------------------------------------colors*/
 
 .bg-color-nav-bar {
-    background-color: #5e6868;
+    background-color: #000000;
 }
 
 .bg-color-footer {
-    background-color: #3e4444;
+    background-color: #000000;
 }
 
 
 /*---------------------------------------------------------------------special*/
 
 body {
-    background-color: #e6e2d3;
+    background-color: #000000;
 }
 
 h1,
@@ -34,7 +34,7 @@ h4 {
     min-height: 90px;
     width: 100%;
     border-radius: 0px;
-    border-color: #5e6868;
+    border-color: #000000;
 }
 
 #navbar {
@@ -99,7 +99,7 @@ footer {
     font-family: "Nunito", sans-serif;
     font-size: 14px;
     font-weight: 300;
-    color: #e6e2d3;
+    color: #ffffff;
 }
 
 .footer {
@@ -133,7 +133,11 @@ section {
     text-align: center;
     font-family: "Cabin Sketch", sans-serif;
     font-weight: 700;
+    color: #ffffff;
+}
 
+.about-text {
+    color: #ffffff;
 }
 
 /*--------------------------------------------------------------------carousel*/
@@ -142,23 +146,22 @@ section {
     width: 50%;
     height: 300;
     margin: auto;
-    box-shadow: 10px 10px 5px grey;
-    border-radius: 5px;
+    box-shadow: 7px 7px 3.5px #454647;
 }
 
 .carousel-inner {
-    border-radius: 5px;
+    border-radius: 1px;
     overflow: hidden;
 }
 
 .carousel-control {
-    border-radius: 5px;
+    border-radius: 1px;
 }
 
 .carousel-caption a {
     text-decoration: none;
     font-family: "Nunito", sans-serif;
-    color: #405d27;
+    color: #ffffff;
     font-size: 30px;
     font-weight: 700;
     text-shadow: 2px 2px #000000;
@@ -202,35 +205,37 @@ button[type="submit"]:hover {
     padding: 0 20px 20px;
     font-family: "Cabin Sketch", sans-serif;
     font-weight: 500;
-    color: #3e4444;
+    color: #ffffff;
     text-align: left;
 }
 
 .band-image {
+    margin-left: auto;
+    margin-right: auto;
     width: 80px;
     height: 80px;
     border-radius: 50px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .band-name {
-    padding-left: 15px;
+    padding-top: 20px;
     font-family: "Cabin Sketch", sans-serif;
     font-weight: 500;
-    color: #82b74b;
-    text-align: left;
+    color: #ffffff;
 }
 
 .band-bio {
     padding-top: 10px;
-    padding-left: 15px;
     font-family: "Nunito", sans-serif;
     font-size: 18px;
     font-weight: 500;
-    color: #3e4444;
+    color: #ffffff;
     text-align: left;
+}
+
+.band-row-padding{
+    min-height: 160px;
 }
 
 /*-----------------------------------------------------------------------watch*/
@@ -248,7 +253,7 @@ button[type="submit"]:hover {
     text-align: center;
     text-decoration: none;
     font-family: "Cabin Sketch", sans-serif;
-    color: #5e6868;
+    color: #ffffff;
     font-size: 25px;
     font-weight: 500;
 }
@@ -264,7 +269,7 @@ button[type="submit"]:hover {
     font-family: "Cabin Sketch", sans-serif;
     font-weight: 700;
     text-align: center;
-    color: #5e6868;
+    color: #ffffff;
 }
 
 #live-countdown {
@@ -272,7 +277,7 @@ button[type="submit"]:hover {
     font-family: "Nunito", sans-serif;
     font-size: 32px;
     font-weight: 500;
-    color: #82b74b;
+    color: #ffffff;
 }
 
 .table {
@@ -296,39 +301,44 @@ td {
     font-weight: 500;
 }
 
-/*---------------------------------------------------------------media queries
+/*---------------------------------------------------------------media queries*/
 
-@media(min-width: 768px max-width: 992px) {
-    .navbar-default .navbar-nav li a {
-        padding-top: 30px;
-        color: #ffffff;
-        font-family: "Cabin Sketch", sans-serif;
-        font-size: 18px;
-        font-weight: 200;
+@media(min-width: 768px) {
+
+    .band-image:hover {
+        margin: 12px;
+        width: 160px;
+        height: 160px;
+        border-radius: 80px;
+        display: block;
     }
+}
 
-    .navbar {
-        min-height: 70px;
-    }
-
-    .navbar-brand {
-        padding-top: 10px;
-    }
-
-    .carousel {
-        width: 100%;
-        height: 300;
+@media(max-width: 991px) {
+    .band-image {
+        width: 160px;        
+        height: 160px;
+        border-radius: 80px;
+        padding-bottom: 10px;
+        display: block;
         margin: auto;
     }
-}
 
-@media(max-width: 767px) {
-    .navbar-default .navbar-nav li a {
-        padding-top: 2px;
-        color: #ffffff;
+    .band-name {
+        padding-top: 20px;
         font-family: "Cabin Sketch", sans-serif;
+        font-weight: 500;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .band-bio {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        font-family: "Nunito", sans-serif;
         font-size: 18px;
-        font-weight: 200;
+        font-weight: 500;
+        color: #ffffff;
+        text-align: center;
     }
 }
-                                                                            */
