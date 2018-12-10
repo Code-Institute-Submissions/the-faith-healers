@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Abel:100,200,300,400,500,600,700|Raleway:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Abel:100,200,300,400,500,600,700|Roboto+Condensed:100,200,300,400,500,600,700');
 
 
 /*----------------------------------------------------------------------colors*/
@@ -8,24 +8,24 @@
 }
 
 .band-bg-color {
-    background: linear-gradient(to bottom right, #1bd37a 0%, #000000 50%)
+    background: linear-gradient(to bottom right, #1bd37a 0%, #000000 75%)
 }
 
 .watch-bg-color {
-    background: linear-gradient(to bottom right, #00bcbc 0%, #000000 50%)
+    background: linear-gradient(to bottom right, #00bcbc 0%, #000000 75%)
 }
 
 .listen-bg-color {
-    background: linear-gradient(to bottom right, #ff0066 0%, #000000 50%)
+    background: linear-gradient(to bottom right, #ff0066 0%, #000000 75%)
 }
 
 .live-bg-color {
-    background: linear-gradient(to bottom right, #ffcc00 0%, #000000 50%)
+    background: linear-gradient(to bottom right, #ffcc00 0%, #000000 75%)
 }
 
 
 .contact-bg-color {
-    background: linear-gradient(to bottom right, #849191 0%, #000000 50%)
+    background: linear-gradient(to bottom right, #849191 0%, #000000 75%)
 }
 
 .bg-color-footer {
@@ -139,7 +139,7 @@ footer {
     max-height: 60px;
     margin-top: 10px;
     padding: 20px 10px 20px 10px;
-    font-family: "Raleway", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 14px;
     font-weight: 300;
     color: #ffffff;
@@ -172,7 +172,8 @@ section {
 }
 
 .about-heading {
-    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 20px;
     text-align: center;
     font-family: "Abel", sans-serif;
     font-weight: 700;
@@ -180,13 +181,15 @@ section {
 }
 
 .about-text {
+    text-align: center;
     color: #ffffff;
+    font-size: 18px;
 }
 
 /*--------------------------------------------------------------------carousel*/
 
 .carousel {
-    width: 50%;
+    width: 80%;
     height: 300;
     margin: auto;
     box-shadow: 7px 7px 3.5px #454647;
@@ -199,6 +202,10 @@ section {
 
 .carousel-control {
     border-radius: 1px;
+}
+
+.carousel-caption {
+    visibility: hidden;
 }
 
 .carousel-caption a {
@@ -224,10 +231,18 @@ section {
 /*---------------------------------------------------------------------Contact*/
 
 .contact-heading {
-    font-family: "Exo", sans-serif;
-    font-weight: 300;
+    font-family: "Abel", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
     margin-top: 25px;
     margin-bottom: 20px;
+}
+
+.contact-text {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #ffffff;
 }
 
 .center-form {
@@ -258,7 +273,7 @@ button[type="submit"]:hover {
     display: block;
     padding: 0 20px 20px;
     font-family: "Abel", sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     color: #ffffff;
     text-align: left;
 }
@@ -281,7 +296,7 @@ button[type="submit"]:hover {
 
 .band-bio {
     padding-top: 10px;
-    font-family: "Raleway", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 18px;
     font-weight: 500;
     color: #ffffff;
@@ -317,11 +332,11 @@ button[type="submit"]:hover {
     display: block;
     padding-top: 20px;
     text-align: center;
-    text-decoration: none;
     font-family: "Abel", sans-serif;
     color: #ffffff;
     font-size: 30px;
     font-weight: 600;
+    text-decoration: none;
 }
 
 .youtubelink:hover {
@@ -340,7 +355,7 @@ button[type="submit"]:hover {
 
 #live-countdown {
     text-align: center;
-    font-family: "Raleway", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 32px;
     font-weight: 500;
     color: #ffffff;
@@ -349,10 +364,13 @@ button[type="submit"]:hover {
 .table {
     margin: auto;
     max-width: 70%;
+    background-color: #4c4c4c;
+    color: #ffffff;
 }
 
 .live-date .live-location .live-price {
     max-width: 50px;
+    color: #ffffff;
 }
 
 th {
@@ -362,7 +380,7 @@ th {
 
 td {
     text-align: center;
-    font-family: "Raleway", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 18px;
     font-weight: 500;
 }
@@ -390,6 +408,17 @@ td {
         border-radius: 80px;
         display: block;
     }
+
+    .carousel {
+        width: 50%;
+        height: 300;
+        margin: auto;
+        box-shadow: 7px 7px 3.5px #454647;
+    }
+
+    .carousel-caption {
+        visibility: visible;
+    }
 }
 
 @media(max-width: 991px) {
@@ -413,7 +442,7 @@ td {
     .band-bio {
         padding-top: 10px;
         padding-bottom: 20px;
-        font-family: "Raleway", sans-serif;
+        font-family: "Roboto Condensed", sans-serif;
         font-size: 18px;
         font-weight: 500;
         color: #ffffff;
