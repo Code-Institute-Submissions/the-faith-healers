@@ -101,11 +101,12 @@ h4 {
     padding-bottom: 20px;
 }
 
-/*----------------------------------------------------------------social links*/
-
-.social-links {
-    max-width: 351px;
+.navbar-right {
+    max-width: 400px;
 }
+
+
+/*----------------------------------------------------------------social links*/
 
 .social-links li a i {
     width: 28px;
@@ -127,11 +128,7 @@ h4 {
     background: #444444;
 }
 
-/*.social-links-nav {*/
 
-/*    float: right;*/
-
-/*}*/
 
 /*----------------------------------------------------------------------footer*/
 
@@ -275,15 +272,15 @@ button[type="submit"]:hover {
     font-family: "Abel", sans-serif;
     font-weight: 700;
     color: #ffffff;
-    text-align: left;
+    text-align: center;
 }
 
 .band-image {
     margin-left: auto;
     margin-right: auto;
-    width: 80px;
-    height: 80px;
-    border-radius: 50px;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
     display: block;
 }
 
@@ -303,9 +300,6 @@ button[type="submit"]:hover {
     text-align: left;
 }
 
-.band-row-padding {
-    min-height: 160px;
-}
 
 /*-----------------------------------------------------------------------watch*/
 
@@ -347,6 +341,7 @@ button[type="submit"]:hover {
 /*------------------------------------------------------------------------live*/
 
 .livecountdown {
+    padding: 10px 0;
     font-family: "Abel", sans-serif;
     font-weight: 700;
     text-align: center;
@@ -354,6 +349,7 @@ button[type="submit"]:hover {
 }
 
 #live-countdown {
+    padding-bottom: 10px;
     text-align: center;
     font-family: "Roboto Condensed", sans-serif;
     font-size: 32px;
@@ -366,6 +362,7 @@ button[type="submit"]:hover {
     max-width: 70%;
     background-color: #4c4c4c;
     color: #ffffff;
+    border-radius: 10px;
 }
 
 .live-date .live-location .live-price {
@@ -385,6 +382,20 @@ td {
     font-weight: 500;
 }
 
+.ticketlink {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.ticketlink:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.ticketlink:active {
+    color: #ffffff;
+    text-decoration: underline;
+}
 
 /*----------------------------------------------------------------------listen*/
 
@@ -400,14 +411,6 @@ td {
 /*---------------------------------------------------------------media queries*/
 
 @media(min-width: 768px) {
-
-    .band-image:hover {
-        margin: 12px;
-        width: 160px;
-        height: 160px;
-        border-radius: 80px;
-        display: block;
-    }
 
     .carousel {
         width: 50%;
@@ -448,5 +451,47 @@ td {
         color: #ffffff;
         text-align: center;
     }
+
+}
+
+@media(max-width: 992px) {
+    .navbar-default .navbar-nav li a {
+        padding-top: 30px;
+        color: #ffffff;
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 18px;
+        font-weight: 200;
+    }
+
+    .navbar {
+        min-height: 70px;
+    }
+
+    .navbar-header {
+        padding-bottom: 10px;
+    }
+
+    .navbar-brand {
+        padding-top: 10px;
+    }
+
+
+    .carousel {
+        width: 90%;
+        height: 300;
+        margin: auto;
+    }
+}
+
+@media(max-width: 767px) {
+    .navbar-default .navbar-nav li a {
+        padding-top: 2px;
+        color: #ffffff;
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 18px;
+        font-weight: 200;
+    }
+    
+
 
 }
