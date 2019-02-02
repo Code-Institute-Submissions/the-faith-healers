@@ -264,6 +264,35 @@ button[type="submit"]:hover {
     color: #ffffff;
 }
 
+
+.social-links-contact {
+    visibility: hidden;
+    text-align: center;
+    max-height: 0px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+.social-links-contact a {
+    text-align: center;
+    width: 2em;
+    height: 2em;
+    font-size: 2em;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links-contact a :hover {
+    color: #444444;
+}
+
+}
+
 /*--------------------------------------------------------------------the band*/
 
 .band-heading {
@@ -535,5 +564,9 @@ td {
     .social-links {
         visibility: hidden;
         max-height: 0px;
+    }
+
+    .social-links-contact {
+        visibility: visible;
     }
 }
