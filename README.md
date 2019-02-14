@@ -70,9 +70,7 @@ The project will use the following standard tree structure:
 
 ![Site Map](/assets/readme-images/readmesitemap.png)
 
-![Information Architecture](/assets/readme-images/readmeinfoarchitecture.png)
-
-*A visual guide to the project's file structure.*
+![Information Architecture](/assets/readme-images/readmeinfoarchitecture.png) *A visual guide to the project's file structure.*
 
 
 #### Features
