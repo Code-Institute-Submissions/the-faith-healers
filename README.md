@@ -50,7 +50,7 @@ Each page will contain clear navigation to the other pages including the homepag
 ### Structure/Skeleton
 #### Site Map
 
-![site map](/assets/readme-images/readmeinfoarchitecture.png)
+![site map](/assets/readme-images/readmesitemap.png)
 
 The Home page is the landing page for the website. It will contain a brief description of the band with a slideshow of pictures.
 The Band page will feature a picture of each band member with a short description of their role within the band.
@@ -68,9 +68,9 @@ To ensure a consistent design throughout the site, I will use a colour board to 
 #### Information Architecture
 The project will use the following standard tree structure:
 
-![Site Map](/assets/readme-images/readmeinfoarchitecture.png)
+![Site Map](/assets/readme-images/readmesitemap.png)
 
-![Information Architecture](/assets/readme-images/readmesitemap.png)
+![Information Architecture](/assets/readme-images/readmeinfoarchitecture.png)
 
 *A visual guide to the project's file structure.*
 
