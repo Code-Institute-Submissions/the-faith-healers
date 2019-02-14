@@ -269,7 +269,7 @@ button[type="submit"]:hover {
     visibility: hidden;
     text-align: center;
     max-height: 0px;
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 40px;
 }
 
