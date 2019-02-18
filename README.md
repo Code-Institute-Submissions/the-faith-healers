@@ -127,7 +127,25 @@ I have personally tested all links on the site, including all page-to-page navig
 
 ## Deployment
 All code for this website is written and edited in the Cloud9 IDE. A GitHub repository has been created for this project, called the-faith-healers. 
-Each phase of work has been committed to Git and pushed to this repository. The final site is being hosted by GitHub pages using this URL: 
+Each phase of work has been committed to Git and pushed to this repository, using the following commands:
+
+* $ git add .
+
+* $ git commit -m "commit description here"
+
+* $ git status 
+    * to check that all the modified files had been added to git
+
+* $ git push origin master
+
+* $ Username
+
+* $ Password
+
+* & git status
+    * the final check that the files had been committed to the repository
+
+The final site is being hosted by GitHub pages using this URL: 
 
 https://elliegmawer.github.io/the-faith-healers/ 
 
